@@ -17,4 +17,26 @@ body {
     pointer-events: none;
     background: url(../assets/noise.gif);
   }
+  //   font-family: "Raleway", sans-serif;
+}
+// .intro-letters {
+//   width: 100%;
+//   max-width: 75vh;
+// }
+
+.cursor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1000;
+  transition: transform 0.1s ease;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+}
+@media screen and (max-width: 760px) {
+  .intro-letters {
+    padding: 0 6vw;
+  }
 }
